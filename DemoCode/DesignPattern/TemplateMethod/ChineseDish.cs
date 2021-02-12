@@ -22,7 +22,9 @@ namespace DemoCode.DesignPattern.TemplateMethod
         {
         }
 
-        //// 準備材料
+        /// <summary>
+        /// 準備材料
+        /// </summary>
         public override void Prepare()
         {
             Console.WriteLine($"今天要來做{this._dishName}");

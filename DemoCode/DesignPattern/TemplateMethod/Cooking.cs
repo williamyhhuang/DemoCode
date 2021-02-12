@@ -24,13 +24,11 @@ namespace DemoCode.DesignPattern.TemplateMethod
         /// <summary>
         /// 準備材料
         /// </summary>
-        /// <param name="dishName"></param>
         public abstract void Prepare();
 
         /// <summary>
         /// 烹飪
         /// </summary>
-        /// <returns></returns>
         public abstract void Cook();
 
         /// <summary>

@@ -4,7 +4,7 @@ namespace DemoCode.DesignPattern.Strategy
     public class Cooking
     {
         /// <summary>
-        /// 
+        /// ICooking
         /// </summary>
         private ICooking _cooking;
 
@@ -18,7 +18,7 @@ namespace DemoCode.DesignPattern.Strategy
         }
 
         /// <summary>
-        /// 
+        /// 準備材料
         /// </summary>
         public void Prepare()
         {
@@ -26,7 +26,7 @@ namespace DemoCode.DesignPattern.Strategy
         }
 
         /// <summary>
-        /// 
+        /// 烹飪
         /// </summary>
         public void Cook()
         {
@@ -34,7 +34,7 @@ namespace DemoCode.DesignPattern.Strategy
         }
 
         /// <summary>
-        /// 
+        /// 裝盤
         /// </summary>
         public void SetDish()
         {
@@ -42,7 +42,7 @@ namespace DemoCode.DesignPattern.Strategy
         }
 
         /// <summary>
-        /// 
+        /// 完成
         /// </summary>
         public void Done()
         {

@@ -25,7 +25,7 @@ namespace DemoCode.DesignPattern.Strategy
         }
 
         /// <summary>
-        /// 
+        /// 準備材料
         /// </summary>
         public void Prepare()
         {
@@ -53,7 +53,7 @@ namespace DemoCode.DesignPattern.Strategy
         }
 
         /// <summary>
-        /// 
+        /// 烹飪
         /// </summary>
         public void Cook()
         {

@@ -9,5 +9,6 @@
     <Folder Include="DesignPattern\" />
     <Folder Include="DesignPattern\TemplateMethod\" />
     <Folder Include="DesignPattern\Strategy\" />
+    <Folder Include="DesignPattern\Factory\" />
   </ItemGroup>
 </Project>

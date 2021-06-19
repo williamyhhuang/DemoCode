@@ -10,5 +10,10 @@
     <Folder Include="DesignPattern\TemplateMethod\" />
     <Folder Include="DesignPattern\Strategy\" />
     <Folder Include="DesignPattern\Factory\" />
+    <Folder Include="UnitTest\" />
+    <Folder Include="UnitTest\SystemTime\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="xunit" Version="2.4.1" />
   </ItemGroup>
 </Project>

@@ -12,6 +12,7 @@
     <Folder Include="DesignPattern\Factory\" />
     <Folder Include="UnitTest\" />
     <Folder Include="UnitTest\SystemTime\" />
+    <Folder Include="DesignPattern\Observer\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="xunit" Version="2.4.1" />

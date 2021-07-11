@@ -1,5 +1,6 @@
 ﻿using System;
 using DemoCode.DesignPattern.Factory;
+using DemoCode.DesignPattern.Observer;
 
 namespace DemoCode
 {
@@ -31,6 +32,7 @@ namespace DemoCode
             */
 
             // Factory
+            /*
             IFactory factory = new Factory();
 
             IToy toy1 = factory.Make("KingKong");
@@ -38,6 +40,24 @@ namespace DemoCode
 
             Console.WriteLine($"Toy I made is: {toy1.ToyName}");
             Console.WriteLine($"Toy I made is: {toy2.ToyName}");
+            */
+
+            // Observer
+            ISubject newsCenter = new NewsCenter();
+
+            IObserver reader1 = new Reader("Jack", CategoryEnum.Politics);
+            IObserver reader2 = new Reader("Lily", CategoryEnum.Sports);
+
+            newsCenter.RegisterObserver(reader1);
+            newsCenter.RegisterObserver(reader2);
+
+            News news1 = new News(){ Category = CategoryEnum.Sports, Author = "Leo", Title = "2021東京奧運" };
+            News news2 = new News() { Category = CategoryEnum.Politics, Author = "Jerry", Title = "莫德納疫苗抵台" };
+
+            newsCenter.AddNews(news1);
+            newsCenter.AddNews(news2);
+
+            Console.Read();
         }
     }
 }

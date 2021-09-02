@@ -2,6 +2,6 @@
 {
     public interface IToy
     {
-        public string ToyName { get; set; }
+        string ToyName { get; set; }
     }
 }

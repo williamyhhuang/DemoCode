@@ -3,7 +3,7 @@
     /// <summary>
     /// CatAdapter
     /// </summary>
-    public class CatAdapter : IMeow
+    public class CatAdapter : ICat
     {
         /// <summary>
         /// Dog

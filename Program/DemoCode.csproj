@@ -46,7 +46,7 @@
     <Compile Include="DesignPattern\Adapter\CatAdapter.cs" />
     <Compile Include="DesignPattern\Adapter\CatAdapterClassType.cs" />
     <Compile Include="DesignPattern\Adapter\Dog.cs" />
-    <Compile Include="DesignPattern\Adapter\IMeow.cs" />
+    <Compile Include="DesignPattern\Adapter\ICat.cs" />
     <Compile Include="DesignPattern\Factory\Factory.cs" />
     <Compile Include="DesignPattern\Factory\Gozilla.cs" />
     <Compile Include="DesignPattern\Factory\IFactory.cs" />

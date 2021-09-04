@@ -3,7 +3,7 @@
     /// <summary>
     /// IMeow
     /// </summary>
-    public interface IMeow
+    public interface ICat
     {
         /// <summary>
         /// 貓叫

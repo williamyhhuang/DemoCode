@@ -66,9 +66,11 @@ namespace Program
             */
 
             // Adapter
+            Console.WriteLine("Adapter 模式:");
             CatAdapter catAdapter = new CatAdapter(new Dog());
             catAdapter.Meow();
 
+            Console.WriteLine("類別形式的 Adapter 模式:");
             CatAdapterClassType catAdapterClassType = new CatAdapterClassType();
             catAdapterClassType.Meow();
 

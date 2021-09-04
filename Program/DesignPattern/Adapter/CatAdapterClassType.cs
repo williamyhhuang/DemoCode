@@ -9,7 +9,7 @@ namespace DemoCode.DesignPattern.Adapter
     /// <summary>
     /// CatAdapterClassType
     /// </summary>
-    public class CatAdapterClassType : Dog, IMeow
+    public class CatAdapterClassType : Dog, ICat
     {
         /// <summary>
         /// 貓叫

@@ -63,6 +63,11 @@
     <Compile Include="DesignPattern\Strategy\ICooking.cs" />
     <Compile Include="DesignPattern\TemplateMethod\ChineseDish.cs" />
     <Compile Include="DesignPattern\TemplateMethod\Cooking.cs" />
+    <Compile Include="DesignPattern\Visitor\Bus.cs" />
+    <Compile Include="DesignPattern\Visitor\ITransportation.cs" />
+    <Compile Include="DesignPattern\Visitor\IVisitor.cs" />
+    <Compile Include="DesignPattern\Visitor\Motor.cs" />
+    <Compile Include="DesignPattern\Visitor\Visitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

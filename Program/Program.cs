@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DemoCode.DesignPattern.Visitor;
 
 namespace Program
 {
@@ -66,6 +67,7 @@ namespace Program
             */
 
             // Adapter
+            /*
             Console.WriteLine("Adapter 模式:");
             CatAdapter catAdapter = new CatAdapter(new Dog());
             catAdapter.Meow();
@@ -73,6 +75,15 @@ namespace Program
             Console.WriteLine("類別形式的 Adapter 模式:");
             CatAdapterClassType catAdapterClassType = new CatAdapterClassType();
             catAdapterClassType.Meow();
+            */
+
+            // Visitor
+            var bus = new Bus(1000, 20, true);
+            var motor = new Motor(100, 2, false);
+
+            var visitor = new Visitor();
+            bus.Accept(visitor);
+            motor.Accept(visitor);
 
             Console.Read();
         }

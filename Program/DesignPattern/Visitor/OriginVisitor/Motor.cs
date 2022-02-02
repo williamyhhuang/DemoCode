@@ -1,9 +1,9 @@
-﻿namespace DemoCode.DesignPattern.Visitor
+﻿namespace DemoCode.DesignPattern.Visitor.OriginVisitor
 {
     /// <summary>
-    /// 巴士
+    /// 機車
     /// </summary>
-    public class Bus : ITransportation
+    public class Motor : ITransportation
     {
         /// <summary>
         /// 馬力
@@ -14,7 +14,7 @@
         /// 限乘人數
         /// </summary>
         public int NumberOfPassenger { get; set; }
-        
+
         /// <summary>
         /// 是否有冷氣
         /// </summary>
@@ -26,7 +26,7 @@
         /// <param name="power"></param>
         /// <param name="numberOfPassenger"></param>
         /// <param name="hasAirConditioner"></param>
-        public Bus(decimal power, int numberOfPassenger, bool hasAirConditioner)
+        public Motor(decimal power, int numberOfPassenger, bool hasAirConditioner)
         {
             this.Power = power;
             this.NumberOfPassenger = numberOfPassenger;

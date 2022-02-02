@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DemoCode.DesignPattern.Visitor
+namespace DemoCode.DesignPattern.Visitor.OriginVisitor
 {
     /// <summary>
     /// Visitor
@@ -13,7 +13,7 @@ namespace DemoCode.DesignPattern.Visitor
         /// <param name="motor"></param>
         public void Visit(Motor motor)
         {
-            Console.WriteLine($"我是台機車，我只在意馬力:{motor.Power}");
+            Console.WriteLine($"這是台機車，我只在意馬力:{motor.Power}");
         }
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace DemoCode.DesignPattern.Visitor
         {
             var ifHasAirConditioner = bus.HasAirConditioner == true ? "有冷氣" : "沒有冷氣";
 
-            Console.WriteLine($"我是台公車，我只在意限乘人數:{bus.NumberOfPassenger}," +
+            Console.WriteLine($"這是台公車，我只在意限乘人數:{bus.NumberOfPassenger}," +
                               $"以及有沒有冷氣:{ifHasAirConditioner}");
         }
     }

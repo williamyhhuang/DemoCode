@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DemoCode.DesignPattern.Visitor;
+using DemoCode.DesignPattern.Visitor.OriginVisitor;
 
 namespace Program
 {
@@ -77,7 +77,7 @@ namespace Program
             catAdapterClassType.Meow();
             */
 
-            // Visitor
+            // OriginVisitor
             var bus = new Bus(1000, 20, true);
             var motor = new Motor(100, 2, false);
 

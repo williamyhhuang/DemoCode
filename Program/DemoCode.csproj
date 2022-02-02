@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -63,17 +63,20 @@
     <Compile Include="DesignPattern\Strategy\ICooking.cs" />
     <Compile Include="DesignPattern\TemplateMethod\ChineseDish.cs" />
     <Compile Include="DesignPattern\TemplateMethod\Cooking.cs" />
-    <Compile Include="DesignPattern\Visitor\Bus.cs" />
-    <Compile Include="DesignPattern\Visitor\ITransportation.cs" />
-    <Compile Include="DesignPattern\Visitor\IVisitor.cs" />
-    <Compile Include="DesignPattern\Visitor\Motor.cs" />
-    <Compile Include="DesignPattern\Visitor\Visitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DesignPattern\Visitor\OriginVisitor\Bus.cs" />
+    <Compile Include="DesignPattern\Visitor\OriginVisitor\ITransportation.cs" />
+    <Compile Include="DesignPattern\Visitor\OriginVisitor\IVisitor.cs" />
+    <Compile Include="DesignPattern\Visitor\OriginVisitor\Motor.cs" />
+    <Compile Include="DesignPattern\Visitor\OriginVisitor\Visitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <Folder Include="DesignPattern\Visitor\OriginVisitor\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

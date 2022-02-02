@@ -1,4 +1,4 @@
-﻿namespace DemoCode.DesignPattern.Visitor
+﻿namespace DemoCode.DesignPattern.Visitor.OriginVisitor
 {
     /// <summary>
     /// IVisitor

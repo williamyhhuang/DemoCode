@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DemoCode.DesignPattern.Visitor.OriginVisitor;
+using DemoCode.DesignPattern.Visitor.AcyclicVisitor;
 
 namespace Program
 {
@@ -78,10 +79,20 @@ namespace Program
             */
 
             // OriginVisitor
+            /*
             var bus = new Bus(1000, 20, true);
             var motor = new Motor(100, 2, false);
 
             var visitor = new Visitor();
+            bus.Accept(visitor);
+            motor.Accept(visitor);
+            */
+
+            // AcyclicVisitor
+            var bus = new AcyclicBus(1000, 20, true);
+            var motor = new AcyclicMotor(100, 2, false);
+
+            var visitor = new AcyclicVisitor();
             bus.Accept(visitor);
             motor.Accept(visitor);
 

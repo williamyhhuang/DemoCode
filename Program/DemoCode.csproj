@@ -77,6 +77,12 @@
     <Compile Include="DesignPattern\Visitor\AcyclicVisitor\AcyclicBus.cs" />
     <Compile Include="DesignPattern\Visitor\AcyclicVisitor\AcyclicMotor.cs" />
     <Compile Include="DesignPattern\Visitor\AcyclicVisitor\IAcyclicTransportation.cs" />
+    <Compile Include="DesignPattern\State\State.cs" />
+    <Compile Include="DesignPattern\State\Eat.cs" />
+    <Compile Include="DesignPattern\State\Coding.cs" />
+    <Compile Include="DesignPattern\State\Sleep.cs" />
+    <Compile Include="DesignPattern\State\SoftwareEngineer.cs" />
+    <Compile Include="DesignPattern\State\StateEnum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -85,6 +91,7 @@
   <ItemGroup>
     <Folder Include="DesignPattern\Visitor\OriginVisitor\" />
     <Folder Include="DesignPattern\Visitor\AcyclicVisitor\" />
+    <Folder Include="DesignPattern\State\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DemoCode.DesignPattern.Visitor.OriginVisitor;
 using DemoCode.DesignPattern.Visitor.AcyclicVisitor;
+using DemoCode.DesignPattern.State;
 
 namespace Program
 {
@@ -89,12 +90,32 @@ namespace Program
             */
 
             // AcyclicVisitor
+            /*
             var bus = new AcyclicBus(1000, 20, true);
             var motor = new AcyclicMotor(100, 2, false);
 
             var visitor = new AcyclicVisitor();
             bus.Accept(visitor);
             motor.Accept(visitor);
+            */
+
+            // State
+            var engineer = new SoftwareEngineer();
+            Console.WriteLine("Step01:");
+            engineer.GetCurrentStateName();
+            engineer.Action();
+
+            Console.WriteLine("Step02:");
+            engineer.GetCurrentStateName();
+            engineer.Action();
+
+            Console.WriteLine("Step03:");
+            engineer.GetCurrentStateName();
+            engineer.Action();
+
+            Console.WriteLine("Step04:");
+            engineer.GetCurrentStateName();
+            engineer.Action();
 
             Console.Read();
         }
